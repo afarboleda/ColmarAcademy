@@ -1,1 +1,66 @@
+/*Global styles*/
 
+@font-face {
+   font-family: "Ubuntu";
+	 src: url("../fonts/Ubuntu/Ubuntu-Light.ttf")
+format("truetype");
+}
+
+
+html {
+  font-size: 16px;
+}
+
+.site {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+/*Nav styles*/
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+}
+
+.logo {
+  font-family: "Ubuntu";
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+}
+
+.logo h1{
+  font-weight: bold;
+}
+
+.logo span{
+  color: #c0c0c0;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.space {
+  height: 100%;
+  padding-left: 1rem;
+  background-color: #afeeee;
+}
+
+
+/*Global styles*/
+
+
+
+
+/*Global styles*/
+
+
+
+
+/*Global styles*/
