@@ -33,7 +33,7 @@ h3 {
 h2 {
   font-size: 1.75rem;
   font-weight: bolder;
-  padding: 2rem 0;
+  padding-top: 2rem;
 }
 
 .lhs {
@@ -55,6 +55,12 @@ h2 {
   flex-direction: column;
   width: 40%;
   padding-left: 1.5rem;
+}
+
+.image img {
+  max-width: 100%;
+	height: auto;
+  display: block;
 }
 
 /*Nav styles*/
@@ -158,12 +164,6 @@ nav {
   overflow: hidden;
 }
 
-.image img {
-  max-width: 100%;
-	height: auto;
-  display: block;
-}
-
 .overview .text {
   width: 65%;
   padding-left: 1rem;
@@ -175,4 +175,95 @@ nav {
 
 .majors {
   background-color: #dcdcdc;
+}
+
+.majors .container{
+  padding-top: 2rem;
+  padding-left: 4.5rem;
+  padding-right: 4.5rem;
+}
+
+.majors h2{
+  text-align: center;
+}
+
+.majors .toprow{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+}
+
+.majors .content {
+  background-color: white;
+  width: 30%;
+}
+
+.majors .text{
+  padding: 1rem 1rem 1.5rem 1rem;
+}
+
+.majors h3{
+  padding-bottom: 1rem;
+}
+
+.majors span,
+.majors p{
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+
+.majors .bottomrow{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+}
+
+/*Thesis styles*/
+
+.thesis h2{
+  text-align: center;
+}
+
+.thesis .site{
+  display: flex;
+  padding-bottom: 2rem;
+}
+
+.thesis .lhs h3{
+  padding-top: 1.5rem;
+  padding-bottom: .5rem;
+}
+
+.thesis .lhs span{
+  padding-bottom: 2rem;
+  color: #4d4d4d;
+}
+
+.thesis .content {
+  display: flex;
+  align-items: center;
+  padding : 1rem;
+}
+
+.thesis .rhs .content:nth-child(1){
+  background-color: #c0c0c0;
+}
+
+.thesis .image {
+  width: 35%;
+  overflow: hidden;
+}
+
+.thesis .text {
+  width: 65%;
+  padding-left: 1rem;
+  line-height: 1.75rem;
+}
+
+/*Footer styles*/
+
+footer {
+  border-top: 1px solid #c0c0c0;
+  display: flex;
+  justify-content: space-between;
 }
