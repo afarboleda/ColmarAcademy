@@ -67,6 +67,13 @@ h2 {
   display: block;
 }
 
+  @media only screen and (max-width: 650px) {
+    .site {
+      padding: 0;
+    }
+  }
+
+
 /*Nav styles*/
 
 nav {
@@ -109,11 +116,28 @@ a:link{
   background-color: #afeeee;
 }
 
-  /*Link styles*/
 
-  .banner a:visited{
-    color:black;
-  }
+  /*Mobile styles*/
+
+  @media only screen and (min-width: 650px) {
+    nav #mobile img{
+      display: none;
+    }
+   }
+
+
+  @media only screen and (max-width: 650px) {
+    nav .logo,
+    nav .menu{
+      display: none;
+    }
+
+    nav #mobile{
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+    }
+   }
 
 /*Banner styles*/
 
@@ -124,6 +148,7 @@ a:link{
 
 .banner .site {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 
@@ -180,6 +205,38 @@ a:link{
     border: 1px solid black;
   }
 
+  /*Mobile steyles*/
+
+  @media only screen and (max-width: 650px) {
+    .banner{
+      padding-top: 0;
+    }
+
+    .banner .lhs,
+    .banner .rhs{
+      width: 100%;
+      padding: 0;
+      justify-content: center;
+    }
+
+    .rhs h1,
+    .rhs h4{
+      padding: 1rem 1rem;
+    }
+
+    .rhs h1{
+      font-size: 2rem;
+    }
+
+    .rhs h4{
+      font-size: 1rem;
+    }
+
+    .button{
+      margin: 1.5rem;
+    }
+  }
+
 /*Overview styles*/
 
 .overview .site{
@@ -203,7 +260,7 @@ a:link{
 .overview .content {
   display: flex;
   align-items: center;
-  padding : 1rem;
+  padding: 1rem;
   border: .05rem solid #c0c0c0;
   transition: background-color 250ms linear 0s;
 }
@@ -219,10 +276,67 @@ a:link{
   line-height: 1.75rem;
 }
 
+  /*Link styles*/
+
+  .overview a:link{
+    color:red;
+  }
+
+  .overview a:visited{
+    color:blue;
+  }
+
   /*Transitions*/
 
   .overview .content:hover{
-    background-color: #dcdcdc;
+    background-color: #eff0f2;
+  }
+
+  /*Mobile*/
+
+  @media only screen and (min-width: 650px) {
+    .overview #mobile{
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: 650px) {
+
+    .overview #desktop{
+      display: none;
+    }
+
+    .overview .rhs{
+      width: 100%;
+      padding-right: 1rem;
+      padding-left: 1rem;
+      padding-bottom: 0;
+      }
+
+    .overview .content{
+      flex-direction: column;
+      padding:0;
+      border: none;
+    }
+
+    .overview .image {
+      width: 100%;
+      padding-bottom: 1rem;
+    }
+
+    .overview .image img{
+    }
+
+    .overview .text {
+      width: 100%;
+      padding-left: 2rem;
+      padding-bottom: 4rem;
+    }
+
+    .overview .site{
+      padding-bottom: 0;
+    }
+
   }
 
 /*Majors styles*/
