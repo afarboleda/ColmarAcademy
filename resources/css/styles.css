@@ -431,8 +431,8 @@ a:link{
       border: 1px solid red;
       color: black;
       box-shadow: 10px 10px grey;
+    }
   }
-
 
 /*Thesis styles*/
 
@@ -479,27 +479,26 @@ a:link{
   /*Mobile*/
 
 
-  @media only screen and (max-width: 650px) {
+    @media only screen and (max-width: 650px) {
 
-    .thesis h2{
-      font-size: 2rem;
+      .thesis h2{
+        font-size: 2rem;
+      }
+
+      .thesis .lhs p,
+      .thesis .lhs h3{
+        display: none;
+      }
+
+      .thesis .rhs{
+        display: none;
+      }
+
+      .thesis .lhs{
+        width: 100%;
+        padding-top: 1rem;
+      }
     }
-
-    .thesis .lhs p,
-    .thesis .lhs h3{
-      display: none;
-    }
-
-    .thesis .rhs{
-      display: none;
-    }
-
-    .thesis .lhs{
-      width: 100%;
-      padding-top: 1rem;
-    }
-
-  }
 
 /*Footer styles*/
 
