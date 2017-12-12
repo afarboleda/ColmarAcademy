@@ -197,7 +197,7 @@ a:link{
     color:white
   }
 
-  /*Transitions*/
+  /*Pseudo classes*/
 
   .banner .rhs .button a:hover{
     background-color: white;
@@ -205,7 +205,7 @@ a:link{
     border: 1px solid black;
   }
 
-  /*Mobile steyles*/
+  /*Mobile styles*/
 
   @media only screen and (max-width: 650px) {
     .banner{
@@ -286,7 +286,7 @@ a:link{
     color:blue;
   }
 
-  /*Transitions*/
+  /*Pseudo classes*/
 
   .overview .content:hover{
     background-color: #eff0f2;
@@ -301,7 +301,6 @@ a:link{
   }
 
   @media only screen and (max-width: 650px) {
-
     .overview #desktop{
       display: none;
     }
@@ -386,6 +385,55 @@ a:link{
   padding-bottom: 2rem;
 }
 
+  /*Mobile*/
+
+  @media only screen and (min-width: 650px) {
+    .majors #mobile{
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: 650px) {
+
+    .majors #desktop{
+      display: none;
+    }
+
+    .majors{
+      background-color: white;
+      padding: 0 1rem 0 1rem;
+      border-top: 1px solid #dcdcdc;
+      border-bottom: 1px solid #dcdcdc;
+    }
+
+    .majors h2{
+      font-size: 2rem;
+    }
+
+    .majors .container{
+      display: flex;
+      flex-wrap: wrap;
+      padding: 1rem 0;
+      justify-content: center;
+    }
+
+    .majors .container div{
+      width: 100%;
+      background-color: #dcdcdc;
+      font-size: 1.25rem;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      transition: 200ms linear 0s;
+    }
+
+    .majors .container div:hover{
+      background-color: white;
+      border: 1px solid red;
+      color: black;
+      box-shadow: 10px 10px grey;
+  }
+
+
 /*Thesis styles*/
 
 .thesis h2{
@@ -428,6 +476,31 @@ a:link{
   line-height: 1.75rem;
 }
 
+  /*Mobile*/
+
+
+  @media only screen and (max-width: 650px) {
+
+    .thesis h2{
+      font-size: 2rem;
+    }
+
+    .thesis .lhs p,
+    .thesis .lhs h3{
+      display: none;
+    }
+
+    .thesis .rhs{
+      display: none;
+    }
+
+    .thesis .lhs{
+      width: 100%;
+      padding-top: 1rem;
+    }
+
+  }
+
 /*Footer styles*/
 
 footer {
@@ -435,3 +508,17 @@ footer {
   display: flex;
   justify-content: space-between;
 }
+
+  /*Mobile*/
+
+  @media only screen and (max-width: 650px) {
+
+    footer #desktop{
+      display: none;
+    }
+
+    footer{
+      margin:1rem;
+      border: none;
+    }
+  }
